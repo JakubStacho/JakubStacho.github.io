@@ -3231,3 +3231,76 @@ form fieldset > * + * {
 .site-main {
   flex: 1 0 auto;
 }
+/* Site-level override, appended after the pico-corp theme's own stylesheet
+   (see themes/pico-corp/README.md "Customisation"). */
+
+:root {
+  /* Tighter vertical rhythm between sections than the theme default
+     (was clamp(3.5rem, 7vw, 7rem) / clamp(2.5rem, 4.5vw, 4rem)). */
+  --pc-section-padding: clamp(2.5rem, 5vw, 5rem);
+  --pc-section-padding-sm: clamp(2rem, 3.5vw, 3.5rem);
+
+  /* Narrower side margins and a slightly wider container, so text spreads
+     out more horizontally (was clamp(1.25rem, 4vw, 2.5rem) / 72rem). */
+  --pc-gutter: clamp(1rem, 2.5vw, 1.75rem);
+  --pc-container: 76rem;
+}
+
+/* The hero has its own hardcoded padding rather than the section tokens
+   above, so it needs its own override to match the tighter rhythm. */
+.hero {
+  padding-block: clamp(2rem, 3vw, 3rem) clamp(2rem, 4vw, 4rem);
+}
+
+/* Styles the bibliography list used for the publications section/pages —
+   there's no theme equivalent, so this follows the same tokens and
+   hairline-rule language as the theme's own .case-results list. */
+
+.bib-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bib-list__item {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: var(--pc-space-md);
+  padding-block: var(--pc-space-md);
+  border-block-end: var(--pc-border);
+}
+
+.bib-list__item:first-child {
+  border-block-start: var(--pc-border);
+}
+
+.bib-list__year {
+  font-family: var(--pc-font-mono);
+  font-size: var(--pc-text-sm);
+  color: var(--pc-text-muted);
+  padding-block-start: 0.15em;
+}
+
+.bib-list__title {
+  margin: 0 0 0.25rem;
+  font-size: var(--pc-text-card);
+  font-weight: var(--pc-weight-medium);
+}
+
+.bib-list__authors,
+.bib-list__venue {
+  margin: 0;
+  font-size: var(--pc-text-sm);
+  color: var(--pc-text-muted);
+}
+
+.bib-list__venue {
+  font-style: italic;
+}
+
+@media (max-width: 30rem) {
+  .bib-list__item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

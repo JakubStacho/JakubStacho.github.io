@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Projects on Jakub Stacho</title>
+		<link>https://example.org/projects/</link>
+		<description>Recent content in Projects on Jakub Stacho</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>This Portfolio Website</title>
+				<link>https://example.org/projects/portfolio-website/</link>
+				<pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.org/projects/portfolio-website/</guid>
+				<description>A Hugo site built on the pico-corp theme, deployed to GitHub Pages.</description>
+			</item>
+			<item>
+				<title>Example Project Two</title>
+				<link>https://example.org/projects/example-project-two/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.org/projects/example-project-two/</guid>
+				<description>TODO — one sentence describing this project for the card.</description>
+			</item>
+			<item>
+				<title>Example Project Three</title>
+				<link>https://example.org/projects/example-project-three/</link>
+				<pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://example.org/projects/example-project-three/</guid>
+				<description>TODO — one sentence describing this project for the card.</description>
+			</item>
+	</channel>
+</rss>

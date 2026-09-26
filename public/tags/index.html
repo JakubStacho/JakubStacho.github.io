@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
@@ -9,7 +9,7 @@
     try {
       var s = localStorage.getItem("pc-scheme");
       if (!s) {
-        var d = "system";
+        var d = "light";
         if (d === "light" || d === "dark") s = d;
       }
       if (s === "light" || s === "dark") {
@@ -19,17 +19,17 @@
   })();
 </script>
 
-    <title>Tags · Test Portfolio Website</title>
+    <title>Tags · Jakub Stacho</title>
 <meta name="description" content="" />
-<link rel="canonical" href="http://localhost:1313/tags/" />
+<link rel="canonical" href="https://example.org/tags/" />
 
 
 
-<meta property="og:site_name" content="Test Portfolio Website" />
+<meta property="og:site_name" content="Jakub Stacho" />
 <meta property="og:title" content="Tags" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/tags/" />
+<meta property="og:url" content="https://example.org/tags/" />
 <meta property="og:locale" content="en_us" />
 
 
@@ -38,35 +38,40 @@
 
 
 
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/tags/index.xml" title="Test Portfolio Website" />
+<link rel="alternate" type="application/rss&#43;xml" href="https://example.org/tags/index.xml" title="Jakub Stacho" />
 
     
 
 
 
-    <link rel="stylesheet" href="/css/pico-corp.css" />
+    <link rel="stylesheet" href="/css/pico-corp.min.e8934963d50c97ff33a89f487135c514b8c3f7718af3d5527cc5ad4c438da236.css" integrity="sha256-6JNJY9UMl/8zqJ9IcTXFFLjD93GK89VSfMWtTEONojY=" />
     <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@id": "http://localhost:1313/#organization",
+      "@id": "https://example.org/#organization",
       "@type": "Organization",
-      "name": "Test Portfolio Website",
-      "url": "http://localhost:1313/"
+      "name": "Jakub Stacho",
+      "sameAs": [
+        "https://www.linkedin.com/in/TODO",
+        "https://github.com/TODO",
+        "https://orcid.org/0000-0000-0000-0000"
+      ],
+      "url": "https://example.org/"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "@type": "ListItem",
-          "item": "http://localhost:1313/",
-          "name": "Test Portfolio Website",
+          "item": "https://example.org/",
+          "name": "Jakub Stacho",
           "position": 1
         },
         {
           "@type": "ListItem",
-          "item": "http://localhost:1313/tags/",
+          "item": "https://example.org/tags/",
           "name": "Tags",
           "position": 2
         }
@@ -85,10 +90,31 @@
     <header class="site-header" data-site-header>
   <div class="container site-header__inner">
     <a class="brand" href="/"><span class="brand__mark" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg></span>
-        <span>Test Portfolio Website</span></a>
+        <span>Jakub Stacho</span></a>
 
     <nav class="site-nav" aria-label="Primary">
   <ul class="site-nav__list">
+    
+      
+      <li>
+        <a class="site-nav__link" href="/projects/">
+          Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a class="site-nav__link" href="/publications/">
+          Publications
+        </a>
+      </li>
+    
+      
+      <li>
+        <a class="site-nav__link" href="/">
+          Home
+        </a>
+      </li>
     
   </ul>
 
@@ -125,6 +151,30 @@
   <div class="mobile-nav" id="mobile-nav" data-open="false">
   <nav class="container" aria-label="Site">
     <ul class="mobile-nav__list">
+      
+        
+        <li>
+          <a class="mobile-nav__link" href="/projects/">
+            <span>Projects</span>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+          </a>
+        </li>
+      
+        
+        <li>
+          <a class="mobile-nav__link" href="/publications/">
+            <span>Publications</span>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+          </a>
+        </li>
+      
+        
+        <li>
+          <a class="mobile-nav__link" href="/">
+            <span>Home</span>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+          </a>
+        </li>
       
     </ul>
 
@@ -182,7 +232,7 @@
       <div class="site-footer__about">
         <a class="brand" href="/">
           <span class="brand__mark" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg></span>
-          <span>Test Portfolio Website</span>
+          <span>Jakub Stacho</span>
         </a>
         
       </div>
@@ -202,7 +252,7 @@
     <div class="site-footer__bottom">
       <div>
         <p>
-          &copy; 2026 Test Portfolio Website.
+          &copy; 2026 Jakub Stacho.
           All rights reserved.
         </p>
         
@@ -212,7 +262,42 @@
         
       </ul>
 
+      <ul class="social-links">
+    
       
+      
+      <li>
+        <a href="https://www.linkedin.com/in/TODO"
+          rel="me noopener"
+          aria-label="LinkedIn"
+          title="LinkedIn">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"></use></svg>
+        </a>
+      </li>
+    
+      
+      
+      <li>
+        <a href="https://github.com/TODO"
+          rel="me noopener"
+          aria-label="GitHub"
+          title="GitHub">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"></use></svg>
+        </a>
+      </li>
+    
+      
+      
+      <li>
+        <a href="https://orcid.org/0000-0000-0000-0000"
+          rel="me noopener"
+          aria-label="ORCID"
+          title="ORCID">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"></use></svg>
+        </a>
+      </li>
+    
+  </ul>
     </div>
   </div>
 </footer>
@@ -371,6 +456,6 @@
   </symbol>
 </svg>
 
-    <script src="/js/theme.js" defer></script>
+    <script src="/js/theme.min.0a2e17d4d2de72d169bc0a518c28b774b6ed8cdb67ee129fe0d26285174040f0.js" integrity="sha256-Ci4X1NLectFpvApRjCi3dLbtjNtn7hKf4NJihRdAQPA=" defer></script>
   </body>
 </html>

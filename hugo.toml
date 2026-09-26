@@ -1,9 +1,22 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
-title = 'Test Portfolio Website'
+title = 'Jakub Stacho'
 theme = 'pico-corp'
 
+[[menu.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 0
+[[menu.main]]
+  name = 'Projects'
+  pageRef = '/projects'
+  weight = 10
+[[menu.main]]
+  name = 'Publications'
+  pageRef = '/publications'
+  weight = 20
 
+[params]
   # --- behaviour -----------------------------------------------------------
   defaultScheme = "light" # "system" | "light" | "dark"
   showSchemeToggle = true
@@ -11,3 +24,17 @@ theme = 'pico-corp'
   showReadingTime = true
   showRelated = true
   dateFormat = "2 January 2006"
+
+  # --- social links (rendered in the header and footer) ---------------------
+  [[params.social]]
+    name = "LinkedIn"
+    icon = "linkedin"
+    url = "https://www.linkedin.com/in/TODO"
+  [[params.social]]
+    name = "GitHub"
+    icon = "github"
+    url = "https://github.com/TODO"
+  [[params.social]]
+    name = "ORCID"
+    icon = "orcid" # not in the theme's icon set; falls back to a generic external-link icon
+    url = "https://orcid.org/0000-0000-0000-0000"

@@ -19,17 +19,17 @@
   })();
 </script>
 
-    <title>Categories · Jakub Stacho</title>
-<meta name="description" content="" />
-<link rel="canonical" href="https://example.org/categories/" />
+    <title>Example Project Two · Jakub Stacho</title>
+<meta name="description" content="TODO — one sentence describing this project for the card." />
+<link rel="canonical" href="https://example.org/projects/example-project-two/" />
 
 
 
 <meta property="og:site_name" content="Jakub Stacho" />
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="Example Project Two" />
+<meta property="og:description" content="TODO — one sentence describing this project for the card." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/categories/" />
+<meta property="og:url" content="https://example.org/projects/example-project-two/" />
 <meta property="og:locale" content="en_us" />
 
 
@@ -38,7 +38,6 @@
 
 
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://example.org/categories/index.xml" title="Jakub Stacho" />
 
     
 
@@ -71,9 +70,15 @@
         },
         {
           "@type": "ListItem",
-          "item": "https://example.org/categories/",
-          "name": "Categories",
+          "item": "https://example.org/projects/",
+          "name": "Projects",
           "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://example.org/projects/example-project-two/",
+          "name": "Example Project Two",
+          "position": 3
         }
       ]
     }
@@ -97,7 +102,7 @@
     
       
       <li>
-        <a class="site-nav__link" href="/projects/">
+        <a class="site-nav__link" href="/projects/" aria-current="page">
           Projects
         </a>
       </li>
@@ -154,7 +159,7 @@
       
         
         <li>
-          <a class="mobile-nav__link" href="/projects/">
+          <a class="mobile-nav__link" href="/projects/" aria-current="page">
             <span>Projects</span>
             <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
           </a>
@@ -187,9 +192,9 @@
 
     <main class="site-main" id="main">
       
-  <header class="page-header">
-  <div class="container">
-    <div class="page-header__breadcrumbs"><nav class="breadcrumbs" aria-label="Breadcrumb">
+  <header class="case-hero">
+    <div class="container">
+      <div class="page-header__breadcrumbs"><nav class="breadcrumbs" aria-label="Breadcrumb">
       <ol>
         <li><a href="/">Home</a></li>
         
@@ -198,29 +203,139 @@
           
             <li>
               
-                <span aria-current="page">Categories</span>
+                <a href="https://example.org/projects/">Projects</a>
+              
+            </li>
+          
+        
+          
+            <li>
+              
+                <span aria-current="page">Example Project Two</span>
               
             </li>
           
         
       </ol>
     </nav></div>
-    
-    <h1 class="page-header__title">Categories</h1>
-    
-  </div>
-</header>
-
-
-  <section class="section">
-    <div class="container">
+      <span class="eyebrow">TODO — e.g. Research Tool</span>
+      <h1 class="page-header__title">Example Project Two</h1>
       
 
-      
-        <p class="muted">Nothing published here yet.</p>
       
     </div>
+  </header>
+
+  <div class="container">
+    <dl class="case-facts">
+      
+      
+      
+        <div class="case-facts__item"><dt>Discipline</dt><dd>TODO — e.g. Research Tool</dd></div>
+      
+      
+        <div class="case-facts__item"><dt>Year</dt><dd>2026</dd></div>
+      
+      
+    </dl>
+  </div>
+
+  <section class="section">
+    <div class="container split split--aside split--sticky">
+      <div>
+        
+
+        
+
+        
+          <div class="case-block">
+            <div class="case-block__body prose prose--wide prose--lede"><p>TODO — replace with a short description of this project: what it is, why
+you built it, and a link to the repo or a live demo if there is one.</p>
+</div>
+          </div>
+        
+
+        
+      </div>
+
+      <aside class="case-sidebar">
+        
+
+        
+          <h2 class="case-sidebar__heading">Technologies</h2>
+          <ul class="tag-list">
+            <li><span class="badge">TODO</span></li><li><span class="badge">TODO</span></li>
+          </ul>
+        
+
+        
+
+        
+      </aside>
+    </div>
   </section>
+
+  
+
+  
+  
+    <section class="related">
+      <div class="container">
+        <div class="section-head">
+    
+    
+      
+        <h2 class="section-head__title">More case studies</h2>
+      
+    
+    
+  </div>
+        <div class="grid-auto grid-auto--wide grid-auto--gap-lg">
+          <article class="project-card">
+  
+  <div class="project-card__body">
+    <p class="project-card__meta">
+      
+      <span>Web</span>
+      <span>2026</span>
+    </p>
+    
+      <h3 class="project-card__title">
+        <a href="/projects/portfolio-website/">This Portfolio Website</a>
+      </h3>
+    
+    
+      <p class="project-card__text">A Hugo site built on the pico-corp theme, deployed to GitHub Pages.</p>
+    
+    
+      <p class="project-card__result">Static, fast, no framework</p>
+    
+  </div>
+</article>
+<article class="project-card">
+  
+  <div class="project-card__body">
+    <p class="project-card__meta">
+      
+      <span>TODO</span>
+      <span>2026</span>
+    </p>
+    
+      <h3 class="project-card__title">
+        <a href="/projects/example-project-three/">Example Project Three</a>
+      </h3>
+    
+    
+      <p class="project-card__text">TODO — one sentence describing this project for the card.</p>
+    
+    
+  </div>
+</article>
+
+        </div>
+      </div>
+    </section>
+  
 
   
 

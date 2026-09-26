@@ -1,0 +1,33 @@
+{{- /* Single publication page. Site-level addition, no theme equivalent —
+       reuses the theme's .case-facts styling for the authors/venue/year
+       block. */ -}}
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+
+  <div class="container">
+    <dl class="case-facts">
+      {{ with .Params.authors }}
+        <div class="case-facts__item"><dt>Authors</dt><dd>{{ delimit . ", " }}</dd></div>
+      {{ end }}
+      {{ with .Params.venue }}
+        <div class="case-facts__item"><dt>Venue</dt><dd>{{ . }}</dd></div>
+      {{ end }}
+      {{ with .Params.year }}
+        <div class="case-facts__item"><dt>Year</dt><dd>{{ . }}</dd></div>
+      {{ end }}
+    </dl>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      {{ with .Content }}<div class="prose prose--wide">{{ . }}</div>{{ end }}
+      {{ with .Params.link }}
+        <p class="section-footer">
+          <a class="button button--secondary" href="{{ . }}">View paper</a>
+        </p>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ partial "cta.html" . }}
+{{ end }}

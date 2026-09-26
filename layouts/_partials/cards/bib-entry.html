@@ -1,0 +1,20 @@
+{{- /* One row in a publications / bibliography list. Accepts a page.
+
+  Site-level addition (not part of the pico-corp theme): renders
+  Params.year, Params.authors (slice) and Params.venue for a page in the
+  publications section. */ -}}
+{{- $page := . -}}
+<li class="bib-list__item">
+  {{ with $page.Params.year }}<span class="bib-list__year">{{ . }}</span>{{ end }}
+  <div class="bib-list__body">
+    <p class="bib-list__title">
+      <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+    </p>
+    {{ with $page.Params.authors }}
+      <p class="bib-list__authors">{{ delimit . ", " }}</p>
+    {{ end }}
+    {{ with $page.Params.venue }}
+      <p class="bib-list__venue">{{ . }}</p>
+    {{ end }}
+  </div>
+</li>

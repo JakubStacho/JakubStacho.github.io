@@ -1,0 +1,33 @@
+{{- /* Publications teaser, rendered as a bibliography-style list of rows
+       rather than a card grid. Site-level addition, mirrors the theme's own
+       _partials/sections/work.html.
+
+  cfg: eyebrow, title, lead, tone, limit, section (default "publications"),
+       link { label, url } */ -}}
+{{- $cfg := .cfg -}}
+{{- $section := site.GetPage (printf "/%s" ($cfg.section | default "publications")) -}}
+{{- with $section -}}
+  {{- $pages := .RegularPages -}}
+  {{- with $cfg.limit }}{{ $pages = first . $pages }}{{ end -}}
+  {{- with $pages -}}
+    <section class="{{ partial "utils/section-class.html" $cfg }}">
+      <div class="container">
+        {{ partial "utils/section-head.html" (dict
+          "eyebrow" $cfg.eyebrow
+          "title" ($cfg.title | default $section.LinkTitle)
+          "lead" $cfg.lead
+          "center" $cfg.center) }}
+
+        <ol class="bib-list">
+          {{ range . }}{{ partial "cards/bib-entry.html" . }}{{ end }}
+        </ol>
+
+        {{ with $cfg.link }}
+          <p class="section-footer">
+            <a class="link-arrow" href="{{ .url }}">{{ .label }}</a>
+          </p>
+        {{ end }}
+      </div>
+    </section>
+  {{- end -}}
+{{- end -}}

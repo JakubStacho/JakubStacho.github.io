@@ -1,0 +1,20 @@
+{{- /* Full /publications/ listing. Site-level addition, mirrors the theme's
+       own layouts/work/section.html but as a bibliography list instead of a
+       card grid. Applies because content/publications/_index.md sets
+       `type: "publications"` with a cascade onto its children. */ -}}
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+
+  <section class="section">
+    <div class="container stack-lg">
+      {{ with .Content }}<div class="prose prose--wide">{{ . }}</div>{{ end }}
+
+      <ol class="bib-list">
+        {{ range .RegularPages }}{{ partial "cards/bib-entry.html" . }}{{ end }}
+      </ol>
+    </div>
+  </section>
+
+  {{ partial "utils/sections.html" . }}
+  {{ partial "cta.html" . }}
+{{ end }}
