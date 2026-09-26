@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Test Portfolio Website'
+theme = 'pico-corp'
+
+
+  # --- behaviour -----------------------------------------------------------
+  defaultScheme = "light" # "system" | "light" | "dark"
+  showSchemeToggle = true
+  showBreadcrumbs = true
+  showReadingTime = true
+  showRelated = true
+  dateFormat = "2 January 2006"
